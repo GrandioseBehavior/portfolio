@@ -5,8 +5,8 @@
 
 
 /* Entire Page Basic Styling */
+html{width:100%;}
 body{background-color:rgb(49, 50, 47);color:white;font-family:Line;letter-spacing: .1rem;margin:0;width:100%;}
-main{width:100%}
 
 /* Markdown Styling */
 h1{font-family:Suess;font-size:4rem;}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -18,11 +19,11 @@
         </div> 
     </div>
 </head>
-        <body>
-      
+<body onload="startTime()">           
+     <div class="main">
 <div class="menubar">
     <div class="wintitle"><b>Text-Editor</b> - Untitled.html</div>
-    <div class="exit"><img width=20px src="https://grandiosebehavior.github.io/asset/circle-xmark-solid.svg"></div>
+    <div class="exit"><img width=17px src="https://grandiosebehavior.github.io/asset/circle-xmark-solid.svg"></div>
 </div>
 <div class="innerw">
     <div class="header">          
@@ -54,8 +55,27 @@
     </div>
 </div>
     <div class="windowb"></div>
-       <footer>some content here</footer>
-<script>
+</div>
+<footer><div class="start"><img height=30px src="https://images.pling.com/img/00/00/15/57/31/1007988/120046-1.png"></div>
+    <div id="txt"></div>
+</footer>
+    <script>
+        function startTime() {
+          const today = new Date();
+          let h = today.getHours();
+          let m = today.getMinutes();
+          let s = today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+          setTimeout(startTime, 1000);
+        }
+        
+        function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+    
     /* When the user clicks on the button, 
     toggle between hiding and showing the dropdown content */
     function myFunction() {

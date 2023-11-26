@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <div class="navbar">
+        <a href="/portfolio">.Home</a>
+        <a href="/portfolio/contact">.Contact me</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">.Portfolio<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content" id="myDropdown">
+            <a href="/portfolio/cred">.experience</a>
+            <a href="/portfolio/code">.web Developement</a>
+            <a href="/portfolio/design">.Graphic Design</a>
+            </div>
+        </div> 
+    </div>
+</head>
+        <body>
+<div class="menubar">
+    <div class="wintitle"><b>Text-Editor</b> - Untitled.html</div>
+    <div class="exit"><img width=20px src="https://grandiosebehavior.github.io/asset/circle-xmark-solid.svg"></div>
+</div>
+<div class="innerw">
+    <div class="header">          
+        <div class="web"> &lt div class="portfolio" &gt
+        </div>
+        <div class="h">
+            <div class="he1">&lth1&gt</div>
+            <div class="name">Mimi Gwinnett</div>
+            <div class="he2">&lt/h1&gt</div>
+            <div class="indent"></div>
+        </div>
+        <div class="p">
+            <div class="p1">&ltp&gt</div>
+            <div class="title"><b>graphic</b> and <b>web designer</b></div>
+            <div class="p2">&lt/p&gt</div>
+            <div class="indent"></div>
+        </div>
+        <div class="last">&lt/div&gt</div>
+    </div>
+    <div class="scroll">
+        <div class="scrollbar">
+            <div class="arrow">
+                <div class="arrow up">
+            <img width=10px src="https://grandiosebehavior.github.io/asset/caret-up-solid.svg"></div>
+            <div class="arrow down">
+            <img width=10px src="https://grandiosebehavior.github.io/asset/caret-down-solid.svg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="windowb"></div>
+
+
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+    </script>
+        </body>
+</html>

@@ -1,96 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="styles.css">
-    <div class="navbar">
-        <a href="/portfolio">.Home</a>
-        <a href="/portfolio/contact">.Contact me</a>
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()">.Portfolio<i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content" id="myDropdown">
-            <a href="/portfolio/cred">.experience</a>
-            <a href="/portfolio/code">.web Developement</a>
-            <a href="/portfolio/design">.Graphic Design</a>
+    <html lang="en">
+        <head> 
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mimi Gwinnett's Web Design Portfolio</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body onload="startTime()">           
+            <div class="main">
+                <div class="menubar">
+                    <div class="wintitle"><b>Notepad</b>
+                    </div>
+                    <div class="filename">- Portfolio.html
+                    </div>
+                    <div class="winbtn">
+                        <div class="winbtnmini">_
+                        </div>
+                        <div class="winbtnmax">A
+                        </div>
+                        <div class="winbtnexit">X
+                        </div>
+                    </div>
+                </div>
+                <div class="innerw">
+                    <div class="header">          
+                        <div class="web"> &lt div class="artist" &gt
+                        </div>
+                        <div class="h">
+                            <div class="he1">&lth1&gt
+                            </div>
+                            <div class="name">MiMi GwinnEtt
+                            </div>
+                            <div class="he2">&lt/h1&gt
+                            </div>
+                            <div class="indent">
+                            </div>
+                        </div>
+                        <div class="p">
+                            <div class="p1">&ltp&gt
+                            </div>
+                            <div class="title"><b>Graphic</b> and <b>Web Designer</b>
+                            </div>
+                            <div class="p2">&lt/p&gt
+                            </div>
+                            <div class="indent">
+                            </div>
+                        </div>
+                        <div class="last">&lt/div&gt
+                        </div>
+                    </div>
+                    <div class="scroll">
+                        <div class="scrollbar">
+                            <div class="arrow">
+                                <div class="arrow up">
+                                    <img width=10px src="https://grandiosebehavior.github.io/asset/caret-up-solid.svg">
+                                </div>
+                                <div class="arrow down">
+                                    <img width=10px src="https://grandiosebehavior.github.io/asset/caret-down-solid.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="windowb">
+                </div>
             </div>
-        </div> 
-    </div>
-</head>
-<body onload="startTime()">           
-     <div class="main">
-<div class="menubar">
-    <div class="wintitle"><b>Text-Editor</b> - Untitled.html</div>
-    <div class="exit"><img width=17px src="https://grandiosebehavior.github.io/asset/circle-xmark-solid.svg"></div>
-</div>
-<div class="innerw">
-    <div class="header">          
-        <div class="web"> &lt div class="portfolio" &gt
-        </div>
-        <div class="h">
-            <div class="he1">&lth1&gt</div>
-            <div class="name">Mimi Gwinnett</div>
-            <div class="he2">&lt/h1&gt</div>
-            <div class="indent"></div>
-        </div>
-        <div class="p">
-            <div class="p1">&ltp&gt</div>
-            <div class="title"><b>graphic</b> and <b>web designer</b></div>
-            <div class="p2">&lt/p&gt</div>
-            <div class="indent"></div>
-        </div>
-        <div class="last">&lt/div&gt</div>
-    </div>
-    <div class="scroll">
-        <div class="scrollbar">
-            <div class="arrow">
-                <div class="arrow up">
-            <img width=10px src="https://grandiosebehavior.github.io/asset/caret-up-solid.svg"></div>
-            <div class="arrow down">
-            <img width=10px src="https://grandiosebehavior.github.io/asset/caret-down-solid.svg"></div>
+            <div class="desktopicons">
+                <div class="folder">
+                    <img width=53px src="https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs_2k-2.png">
+                </div>
+                <div class="fname">Projects
+                </div>
+                <div class="paddesk">
+                    <img src="https://win98icons.alexmeub.com/icons/png/notepad-5.png">
+                </div>
+                <div class="ndname">Notepad
+                </div>
+                <div class="games">
+                    <img width=55px src="https://win98icons.alexmeub.com/icons/png/joystick-4.png">
+                </div>
+                <div class="gname">Games
+                </div>
+                <div class="cmd">
+                    <img height=47px src="https://win98icons.alexmeub.com/icons/png/console_prompt-0.png">
+                </div>
+                <div class="cname">Command<br>Prompt
+                </div>
+                <div class="bin">
+                    <img width=55px src="https://win98icons.alexmeub.com/icons/png/recycle_bin_full-2.png">
+                </div> 
+                <div class="bname">Recycle Bin
+                </div>
             </div>
-        </div>
-    </div>
-</div>
-    <div class="windowb"></div>
-</div>
-<footer><div class="start"><img height=30px src="https://images.pling.com/img/00/00/15/57/31/1007988/120046-1.png"></div>
-    <div id="txt"></div>
-</footer>
-    <script>
-        function startTime() {
-          const today = new Date();
-          let h = today.getHours();
-          let m = today.getMinutes();
-          let s = today.getSeconds();
-          m = checkTime(m);
-          s = checkTime(s);
-          document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-          setTimeout(startTime, 1000);
-        }
-        
-        function checkTime(i) {
-          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-          return i;
-        }
-    
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-    
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(e) {
-      if (!e.target.matches('.dropbtn')) {
-      var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
-        }
-      }
-    }
-    </script>
+            <footer>
+                <div class="leftbar">
+                    <button onclick="myFunction()" id="myButton" class="dropbtn">
+                        <img src="https://images.pling.com/img/00/00/15/57/31/1007988/120046-1.png" height=36px>
+                    </button>
+                    <div class="drop-down">
+                        <div class="winlogo">
+                            <div class="winstrip" id="">
+                                <p class="w98">Windows 98</p>
+                            </div>
+                        </div>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="/portfolio">
+                                <img src="https://win98icons.alexmeub.com/icons/png/monitor_windows.png">
+                            <p>Desktop</p>
+                            </a>
+                            <a href="/portfolio/contact">
+                                <img src="https://win98icons.alexmeub.com/icons/png/outlook_express-0.png">
+                            <p>Contact</p>
+                            </a>
+                            <a href="/portfolio/cred">
+                                <img src="https://win98icons.alexmeub.com/icons/png/certificate_seal.png">
+                            <p>Experience</p>
+                            </a>
+                            <a href="/portfolio/code">
+                                <img src="https://win98icons.alexmeub.com/icons/png/program_manager-1.png">
+                            <p>Web Developement</p>
+                            </a>
+                            <a href="/portfolio/design">
+                                <img src="https://win98icons.alexmeub.com/icons/png/paint_old-0.png">
+                            <p>Graphic Design</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="b1">
+                    </div>
+                    <div class="divider">
+                    </div>
+                    <div class="tab">
+                        <div class="notepad">
+                            <img  class="pad" src="https://win98icons.alexmeub.com/icons/png/notepad-3.png">Notepad
+                        </div>
+                    </div>
+                    <div class="tab2">
+                        <div class="paint"> 
+                            <img class="pro" height=19px src="https://win98icons.alexmeub.com/icons/png/paint_file-4.png">Paint
+                        </div>
+                    </div>
+                </div>
+                <div class="tray">
+                    <img class="usb" src="https://win98icons.alexmeub.com/icons/png/usb-1.png">
+                    <img class="volume" src="https://win98icons.alexmeub.com/icons/png/loudspeaker_rays-1.png">
+                    <img class="search" src="https://win98icons.alexmeub.com/icons/png/search_web-1.png">
+                </div>
+                <div id="txt" class="txt">
+                </div>
+            </footer>
+            <script>
+                // clock
+                    function startTime() 
+                    {const today = new Date();
+                    let h = today.getHours();
+                    let m = today.getMinutes();
+                    let s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    const period = h >= 12 ? "PM" : "AM";
+                    h = h % 12 || 12; 
+                // convert to 12-hour format
+                    const formattedTime = h + ":" + m + " " + period;document.getElementById('txt').innerHTML = formattedTime;
+                    setTimeout(startTime, 1000);}
+                    function checkTime(i) 
+                    {if (i < 10) {i = "0" + i};  
+                // add zero in front of numbers < 10
+                    return i;}
+            </script>
+     <script> 
+     var button = document.getElementById("myButton");
+     var dropdown = document.getElementById("myDropdown");
+     var dropDown = document.querySelector(".drop-down");
+
+     button.addEventListener("click", function() {
+         dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+         dropDown.style.display = (dropDown.style.display === "block") ? "none" : "block";
+     })</script>
         </body>
-</html>
+    </html>

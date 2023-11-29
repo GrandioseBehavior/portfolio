@@ -6,11 +6,11 @@
 @font-face {font-family: Square;src: url(https://grandiosebehavior.github.io/asset/SquareThings-xL2V.ttf);}
 /* GLOBAL LAYOUT */    
 *{outline:0;border:0;margin:0;padding:0;box-sizing:border-box;cursor: url('https://grandiosebehavior.github.io/portfolio/window.cur'), auto;}
-body{background-color:rgb(49, 50, 47);color:white;font-family:serif;letter-spacing:.1rem;width:100%;background-color:rgb(191, 0, 255);}
+body{background-color:rgb(49, 50, 47);color:white;font-family:serif;letter-spacing:.1rem;width:100%;background-color:rgb(191, 0, 255);height:500px;}
 
 
 /* NOTEPAD WINDOW COMPONENTS */
-.main{margin-top:10px;width:80%;margin-left:20px;border-left:2px solid grey;border-radius:5px;box-shadow: 0 0 9px black;}
+.main{margin-top:10px;width:60%;margin-left:20px;border-left:2px solid grey;border-radius:5px;box-shadow: 0 0 9px black;5}
 
 /* TITLEBAR */
     .menubar{color:white;height:30px;background: linear-gradient(90deg,#011590 30%,#2B64B6);overflow:hidden;padding:0;border-left:6px solid #C0C0C0;border-right:6px solid #C0C0C0;border-top:3px solid #fff;display:flex;flex-direction:row;justify-content: space-evenly;padding-left:10px;width:100%,margin:0;align-items:center;justify-content:inherit;min-width:50px;white-space: nowrap;}
@@ -56,7 +56,7 @@ body{background-color:rgb(49, 50, 47);color:white;font-family:serif;letter-spaci
 
 
 /* DESKTOP ICONS */
-.desktopicons{width:100%; position:absolute;display:flex;justify-content: space-evenly;align-items:center;flex-direction:column;margin:-380px;height:480px;margin-left:auto;z-index:-1}
+.desktopicons{width:100%; position:absolute;display:flex;justify-content: space-evenly;align-items:center;flex-direction:column;margin:-380px;height:460px;margin-left:auto;z-index:-1}
 .folder{width:100%;
 display:flex;justify-content: end;align-items:center;height:50px;padding-right:25px;padding-top:5px;}
     .fname{font-family:sans-serif;font-size:.7rem;display:flex;justify-content: end;align-items:center;margin-left:auto;padding-right:23.5px;text-shadow:1px 1px black;padding-bottom:10px}

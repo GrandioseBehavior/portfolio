@@ -6,7 +6,7 @@
 @font-face {font-family: Square;src: url(https://grandiosebehavior.github.io/asset/SquareThings-xL2V.ttf);}
 /* GLOBAL LAYOUT */    
 *{outline:0;border:0;margin:0;padding:0;box-sizing:border-box;cursor: url('https://grandiosebehavior.github.io/portfolio/window.cur'), auto;}
-body{background-color:rgb(49, 50, 47);color:white;font-family:serif;letter-spacing:.1rem;width:100%;background-image: url(https://github.com/GrandioseBehavior/asset/blob/main/checkered.png?raw=true);background-repeat: no-repeat;background-size:cover;background-position: center;height:500px;}
+body{background-color:rgb(49, 50, 47);color:white;font-family:serif;letter-spacing:.1rem;width:100%;background-image: url(https://github.com/GrandioseBehavior/asset/blob/main/checkered.png?raw=true);background-repeat: no-repeat;background-size:contain;background-position: center;height:500px;}
 
 /* NOTEPAD WINDOW COMPONENTS */
 .main{margin-top:10px;width:60%;margin-left:20px;border-left:2px solid grey;border-radius:5px;box-shadow: 0 0 9px black;5}
